@@ -1,0 +1,76 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "vl-reward_bench",
+  "dataset_size": 102607051,
+  "description": "",
+  "download_size": 96842210,
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "query": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "image": {
+      "_type": "Image"
+    },
+    "human_ranking": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "models": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "judge": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "rationale": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "query_source": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "ground_truth": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 199449261,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 102607051,
+      "num_examples": 1247,
+      "dataset_name": "vl-reward_bench"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

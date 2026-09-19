@@ -1,0 +1,6 @@
+/papers/
+/docs/
+.vscode/
+/.kilo/
+/__pycache__/
+**/__pycache__/

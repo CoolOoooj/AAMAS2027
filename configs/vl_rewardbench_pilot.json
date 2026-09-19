@@ -1,0 +1,18 @@
+{
+  "project_root": "..",
+  "benchmark": "VL-RewardBench",
+  "samples_path": "data/VL-RewardBench/pilot_50.jsonl",
+  "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+  "model_revision": null,
+  "prompt_version": "pairwise-v1",
+  "output_dir": "results/vl_rewardbench_pilot",
+  "ledger_path": "ledger/vl_rewardbench_pilot.jsonl",
+  "device_map": "auto",
+  "dtype": "bfloat16",
+  "seed": 0,
+  "temperature": 0.0,
+  "do_sample": false,
+  "max_new_tokens": 120,
+  "save_logits": true,
+  "run_prefix": "pilot50"
+}
