@@ -1,0 +1,20 @@
+{
+  "project_root": "..",
+  "benchmark": "VL-RewardBench",
+  "samples_path": "data/splits/vl_rewardbench_pilot_100_seed20260920.jsonl",
+  "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt_version": "pairwise-v2-forced-abba",
+  "output_dir": "results/vl_rewardbench_pilot_100_order_swap",
+  "summary_path": "results/vl_rewardbench_pilot_100_order_swap/summary.json",
+  "ledger_path": "ledger/vl_rewardbench_pilot_100_order_swap.jsonl",
+  "device_map": "auto",
+  "dtype": "bfloat16",
+  "seed": 20260920,
+  "temperature": 0.0,
+  "do_sample": false,
+  "max_new_tokens": 120,
+  "save_logits": true,
+  "forced_readout": true,
+  "resume": true,
+  "run_prefix": "pilot100_s20260920_abba"
+}

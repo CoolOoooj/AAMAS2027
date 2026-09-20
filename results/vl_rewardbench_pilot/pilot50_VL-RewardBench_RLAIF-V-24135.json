@@ -3,7 +3,6 @@
   "benchmark": "VL-RewardBench",
   "instance_id": "RLAIF-V-24135",
   "model": "Qwen/Qwen3-VL-4B-Instruct",
-  "model_revision": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
   "prompt_version": "pairwise-v1",
   "seed": 0,
   "image": "/mnt/dataset3/hongjun/AAMAS2027/data/VL-RewardBench/images/0044_RLAIF-V-24135.jpg",

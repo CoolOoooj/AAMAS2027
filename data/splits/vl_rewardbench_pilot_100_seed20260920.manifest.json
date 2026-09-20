@@ -1,0 +1,982 @@
+{
+  "benchmark": "VL-RewardBench",
+  "dataset_path": "data\\VL-RewardBench",
+  "dataset_size": 1247,
+  "seed": 20260920,
+  "limit": 100,
+  "stratum_field": "query_source",
+  "stratum_quotas": {
+    "COCO": 5,
+    "TextVQA": 1,
+    "LCS-558K": 3,
+    "sharegpt4v-web-landmark": 1,
+    "sharegpt4v-web-celebrity": 1,
+    "GQA": 2,
+    "VQAv2": 3,
+    "OK-VQA": 3,
+    "vqav2": 2,
+    "coco": 3,
+    "POVID_preference_data_for_VLLMs": 36,
+    "unknown": 26,
+    "wildvision-battle": 14
+  },
+  "label_counts": {
+    "A": 50,
+    "B": 50
+  },
+  "label_counts_by_stratum": {
+    "COCO": {
+      "A": 3,
+      "B": 2
+    },
+    "GQA": {
+      "A": 1,
+      "B": 1
+    },
+    "LCS-558K": {
+      "A": 2,
+      "B": 1
+    },
+    "OK-VQA": {
+      "A": 1,
+      "B": 2
+    },
+    "POVID_preference_data_for_VLLMs": {
+      "A": 18,
+      "B": 18
+    },
+    "TextVQA": {
+      "A": 1
+    },
+    "VQAv2": {
+      "A": 2,
+      "B": 1
+    },
+    "coco": {
+      "A": 1,
+      "B": 2
+    },
+    "sharegpt4v-web-celebrity": {
+      "B": 1
+    },
+    "sharegpt4v-web-landmark": {
+      "B": 1
+    },
+    "unknown": {
+      "A": 13,
+      "B": 13
+    },
+    "vqav2": {
+      "A": 1,
+      "B": 1
+    },
+    "wildvision-battle": {
+      "A": 7,
+      "B": 7
+    }
+  },
+  "output": "data/splits/vl_rewardbench_pilot_100_seed20260920.jsonl",
+  "image_dir": "data/VL-RewardBench/pilot_100_seed20260920_images",
+  "samples": [
+    {
+      "pilot_index": 0,
+      "instance_id": "RLHF-V-2258",
+      "source_index": 258,
+      "stratum": "coco",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 1,
+      "instance_id": "hallucination_pair-2796",
+      "source_index": 525,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 2,
+      "instance_id": "mathverse_3903",
+      "source_index": 911,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 3,
+      "instance_id": "RLAIF-V-67853",
+      "source_index": 172,
+      "stratum": "GQA",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 4,
+      "instance_id": "hallucination_pair-14291",
+      "source_index": 449,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 5,
+      "instance_id": "mmmu_pro_test_Electronics_101",
+      "source_index": 962,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 6,
+      "instance_id": "mmmu_pro_validation_Energy_and_Power_19",
+      "source_index": 1033,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 7,
+      "instance_id": "RLAIF-V-1169",
+      "source_index": 5,
+      "stratum": "LCS-558K",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 8,
+      "instance_id": "mmmu_pro_test_Chemistry_96",
+      "source_index": 942,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 9,
+      "instance_id": "RLHF-V-1424",
+      "source_index": 240,
+      "stratum": "vqav2",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 10,
+      "instance_id": "hallucination_pair-12760",
+      "source_index": 399,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 11,
+      "instance_id": "mathverse_3749-2",
+      "source_index": 902,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 12,
+      "instance_id": "RLAIF-V-49459",
+      "source_index": 128,
+      "stratum": "sharegpt4v-web-landmark",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 13,
+      "instance_id": "hallucination_pair-6705",
+      "source_index": 656,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 14,
+      "instance_id": "mathverse_3749-1",
+      "source_index": 901,
+      "stratum": "unknown",
+      "source_gold": "B",
+      "candidate_order_swapped": true,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 15,
+      "instance_id": "wildvision-battle-2489",
+      "source_index": 1127,
+      "stratum": "wildvision-battle",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 16,
+      "instance_id": "wildvision-battle-2371",
+      "source_index": 1120,
+      "stratum": "wildvision-battle",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 17,
+      "instance_id": "wildvision-battle-496",
+      "source_index": 1206,
+      "stratum": "wildvision-battle",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 18,
+      "instance_id": "mathverse_3388",
+      "source_index": 873,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 19,
+      "instance_id": "hallucination_pair-14246",
+      "source_index": 447,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 20,
+      "instance_id": "hallucination_pair-4742",
+      "source_index": 586,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 21,
+      "instance_id": "hallucination_pair-2703",
+      "source_index": 520,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 22,
+      "instance_id": "hallucination_pair-8799",
+      "source_index": 716,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 23,
+      "instance_id": "RLAIF-V-743",
+      "source_index": 191,
+      "stratum": "TextVQA",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 24,
+      "instance_id": "hallucination_pair-11848",
+      "source_index": 367,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 25,
+      "instance_id": "RLAIF-V-8497",
+      "source_index": 229,
+      "stratum": "COCO",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 26,
+      "instance_id": "mathverse_1908",
+      "source_index": 806,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 27,
+      "instance_id": "hallucination_pair-10349",
+      "source_index": 315,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 28,
+      "instance_id": "wildvision-battle-2332",
+      "source_index": 1117,
+      "stratum": "wildvision-battle",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 29,
+      "instance_id": "RLAIF-V-6786",
+      "source_index": 173,
+      "stratum": "GQA",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 30,
+      "instance_id": "mathverse_1868",
+      "source_index": 803,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 31,
+      "instance_id": "hallucination_pair-12118",
+      "source_index": 379,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 32,
+      "instance_id": "hallucination_pair-4229",
+      "source_index": 576,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 33,
+      "instance_id": "hallucination_pair-9850",
+      "source_index": 741,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 34,
+      "instance_id": "mathverse_1303",
+      "source_index": 771,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 35,
+      "instance_id": "mmmu_pro_validation_Mechanical_Engineering_6",
+      "source_index": 1059,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 36,
+      "instance_id": "RLAIF-V-10273",
+      "source_index": 1,
+      "stratum": "COCO",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 37,
+      "instance_id": "RLAIF-V-53523",
+      "source_index": 136,
+      "stratum": "COCO",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 38,
+      "instance_id": "wildvision-battle-747",
+      "source_index": 1242,
+      "stratum": "wildvision-battle",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 39,
+      "instance_id": "mmmu_pro_test_Public_Health_189",
+      "source_index": 1020,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 40,
+      "instance_id": "mathverse_1244",
+      "source_index": 769,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 41,
+      "instance_id": "hallucination_pair-5824",
+      "source_index": 624,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 42,
+      "instance_id": "hallucination_pair-9308",
+      "source_index": 730,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 43,
+      "instance_id": "wildvision-battle-5772",
+      "source_index": 1224,
+      "stratum": "wildvision-battle",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 44,
+      "instance_id": "RLAIF-V-60191",
+      "source_index": 148,
+      "stratum": "COCO",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 45,
+      "instance_id": "mathverse_3624",
+      "source_index": 892,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 46,
+      "instance_id": "mmmu_pro_test_Materials_417",
+      "source_index": 1006,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 47,
+      "instance_id": "hallucination_pair-8098",
+      "source_index": 695,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 48,
+      "instance_id": "RLAIF-V-49234",
+      "source_index": 127,
+      "stratum": "OK-VQA",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 49,
+      "instance_id": "mmmu_pro_test_Design_48",
+      "source_index": 952,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 50,
+      "instance_id": "mmmu_pro_test_Economics_108",
+      "source_index": 956,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 51,
+      "instance_id": "hallucination_pair-7497",
+      "source_index": 680,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 52,
+      "instance_id": "RLAIF-V-24135",
+      "source_index": 44,
+      "stratum": "VQAv2",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 53,
+      "instance_id": "mathverse_2049",
+      "source_index": 813,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 54,
+      "instance_id": "RLHF-V-874",
+      "source_index": 299,
+      "stratum": "vqav2",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 55,
+      "instance_id": "RLAIF-V-63938",
+      "source_index": 155,
+      "stratum": "LCS-558K",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 56,
+      "instance_id": "mathverse_1148",
+      "source_index": 765,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 57,
+      "instance_id": "hallucination_pair-6301",
+      "source_index": 646,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 58,
+      "instance_id": "hallucination_pair-8228",
+      "source_index": 700,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 59,
+      "instance_id": "RLHF-V-4778",
+      "source_index": 283,
+      "stratum": "coco",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 60,
+      "instance_id": "hallucination_pair-13769",
+      "source_index": 434,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 61,
+      "instance_id": "hallucination_pair-2084",
+      "source_index": 498,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 62,
+      "instance_id": "hallucination_pair-7943",
+      "source_index": 689,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 63,
+      "instance_id": "hallucination_pair-1569",
+      "source_index": 482,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 64,
+      "instance_id": "wildvision-battle-1108",
+      "source_index": 1079,
+      "stratum": "wildvision-battle",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 65,
+      "instance_id": "hallucination_pair-3392",
+      "source_index": 541,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 66,
+      "instance_id": "wildvision-battle-4940",
+      "source_index": 1205,
+      "stratum": "wildvision-battle",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 67,
+      "instance_id": "hallucination_pair-7195",
+      "source_index": 670,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 68,
+      "instance_id": "mmmu_pro_test_Computer_Science_334",
+      "source_index": 950,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 69,
+      "instance_id": "mathverse_3783",
+      "source_index": 905,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 70,
+      "instance_id": "hallucination_pair-10364",
+      "source_index": 316,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 71,
+      "instance_id": "wildvision-battle-1009",
+      "source_index": 1076,
+      "stratum": "wildvision-battle",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 72,
+      "instance_id": "hallucination_pair-2492",
+      "source_index": 512,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 73,
+      "instance_id": "wildvision-battle-522",
+      "source_index": 1213,
+      "stratum": "wildvision-battle",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 74,
+      "instance_id": "hallucination_pair-10335",
+      "source_index": 314,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 75,
+      "instance_id": "wildvision-battle-1875",
+      "source_index": 1105,
+      "stratum": "wildvision-battle",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 76,
+      "instance_id": "RLAIF-V-71010",
+      "source_index": 182,
+      "stratum": "COCO",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 77,
+      "instance_id": "RLAIF-V-41386",
+      "source_index": 98,
+      "stratum": "VQAv2",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 78,
+      "instance_id": "hallucination_pair-6340",
+      "source_index": 648,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 79,
+      "instance_id": "hallucination_pair-3921",
+      "source_index": 559,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 80,
+      "instance_id": "mmmu_pro_test_Diagnostics_and_Laboratory_Medicine_101",
+      "source_index": 954,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 81,
+      "instance_id": "RLAIF-V-70363",
+      "source_index": 179,
+      "stratum": "LCS-558K",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 82,
+      "instance_id": "hallucination_pair-13079",
+      "source_index": 408,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 83,
+      "instance_id": "RLAIF-V-67360",
+      "source_index": 171,
+      "stratum": "OK-VQA",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 84,
+      "instance_id": "wildvision-battle-2107",
+      "source_index": 1110,
+      "stratum": "wildvision-battle",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 85,
+      "instance_id": "hallucination_pair-5773",
+      "source_index": 621,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 86,
+      "instance_id": "mmmu_pro_test_Mechanical_Engineering_78",
+      "source_index": 1013,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 87,
+      "instance_id": "wildvision-battle-2262",
+      "source_index": 1116,
+      "stratum": "wildvision-battle",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 88,
+      "instance_id": "mathverse_1323",
+      "source_index": 772,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 89,
+      "instance_id": "RLAIF-V-81811",
+      "source_index": 225,
+      "stratum": "sharegpt4v-web-celebrity",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 90,
+      "instance_id": "hallucination_pair-10677",
+      "source_index": 327,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 91,
+      "instance_id": "wildvision-battle-2910",
+      "source_index": 1153,
+      "stratum": "wildvision-battle",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 92,
+      "instance_id": "mathverse_2653-1",
+      "source_index": 841,
+      "stratum": "unknown",
+      "source_gold": "B",
+      "candidate_order_swapped": true,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 93,
+      "instance_id": "hallucination_pair-7202",
+      "source_index": 671,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 94,
+      "instance_id": "hallucination_pair-11138",
+      "source_index": 344,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 95,
+      "instance_id": "mmmu_pro_test_Materials_6",
+      "source_index": 1007,
+      "stratum": "unknown",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 96,
+      "instance_id": "RLAIF-V-43042",
+      "source_index": 109,
+      "stratum": "OK-VQA",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 97,
+      "instance_id": "hallucination_pair-12743",
+      "source_index": 398,
+      "stratum": "POVID_preference_data_for_VLLMs",
+      "source_gold": "A",
+      "candidate_order_swapped": true,
+      "gold": "B"
+    },
+    {
+      "pilot_index": 98,
+      "instance_id": "RLAIF-V-42521",
+      "source_index": 107,
+      "stratum": "VQAv2",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    },
+    {
+      "pilot_index": 99,
+      "instance_id": "RLHF-V-3857",
+      "source_index": 273,
+      "stratum": "coco",
+      "source_gold": "A",
+      "candidate_order_swapped": false,
+      "gold": "A"
+    }
+  ]
+}

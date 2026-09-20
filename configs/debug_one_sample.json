@@ -3,7 +3,6 @@
   "benchmark": "VL-RewardBench",
   "samples_path": "data/debug_one_sample.json",
   "model_id": "Qwen/Qwen3-VL-4B-Instruct",
-  "model_revision": null,
   "prompt_version": "pairwise-v1",
   "output_dir": "results/debug",
   "ledger_path": "ledger/m5_ledger.jsonl",
